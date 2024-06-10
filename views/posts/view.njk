@@ -1,0 +1,12 @@
+{% extends 'partials/layout.njk' %}
+
+{% block title %}View Post{% endblock %}
+
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.body }}</p>
+    <p><strong>Created At:</strong> {{ post.createdAt }}</p>
+    <p><strong>Updated At:</strong> {{ post.updatedAt }}</p>
+    <a class="btn btn-primary" href="/posts">Posts</a>
+    <a class="btn btn-secondary" href="/">Home</a>
+{% endblock %}
